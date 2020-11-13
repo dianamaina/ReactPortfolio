@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-
 import Navbar from '../components/Navbar.jsx';
 import Jumbotron from '../components/Jumbotron.jsx';
 import './Contact.css';
-import '../images/linkedin.png';
-import '../images/github.png';
-import '../images/gmail.png';
+
 
 class Contact extends Component {
   render() {
