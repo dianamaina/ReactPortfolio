@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { CenteredHeader } from './App.js'
+import { CenteredHeader } from './App.js.js'
 
 class Home extends Component {
   render() {
