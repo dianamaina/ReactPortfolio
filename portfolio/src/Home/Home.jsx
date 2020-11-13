@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Navbar from '../components/Navbar.jsx';
 import Jumbotron from '../components/Jumbotron.jsx';
-import '../images/ardian.jpg';
+import '../images/Diana.jpg';
 import './Home.css';
 
 class Home extends Component {
