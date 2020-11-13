@@ -1,64 +1,40 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
-import { CenteredHeader } from './App.js.js'
-import { PortButton } from './Code.js.js'
-
-const FormDiv = styled.div`
-  margin: 0 auto;
-  width: 50%;
-`
-
-const FormLabel = styled.label`
-  display: block;
-`
-
-const FormInput = styled.input`
-  width: 100%;
-`
-
-const CommentInput = styled.textarea`
-  width: 100%;
-  height: 6em;
-`
-
-const EmailMe = styled.p`
-  text-align: center;
-  padding: 4%;
-`
+import Navbar from '../components/Navbar.jsx';
+import Jumbotron from '../components/Jumbotron.jsx';
+import './Contact.css';
+import '../images/linkedin.png';
+import '../images/github.png';
+import '../images/gmail.png';
 
 class Contact extends Component {
-
   render() {
-    return (
+    return(
       <div>
-        <CenteredHeader>Here's how to reach me!</CenteredHeader>
-
-        <FormDiv>
-          <form action="https://formspree.io/dianamainachui@gmail.com" method="POST" id="contactform">
-            <div>
-              <FormLabel>Name:</FormLabel>
-              <FormInput type="text" name="name" />
+        <Navbar />
+        <Jumbotron title="Contact"/>
+          <div className="container">
+          <div className="row">
+            <div className="col-4">
+            <a href="mailto:ardiandurmishi@gmail.com" target="_blank">
+            <img className="logos" src={require('../images/gmail.png')}/>
+            </a>
             </div>
-            <div>
-              <FormLabel>Email:</FormLabel>
-              <FormInput type="text" name="_replyto" />
+            <div className="col-4">
+              <a target="_blank" href="https://www.linkedin.com/in/ardiandurmishi/">
+                <img className="logos" src={require('../images/linkedin.png')}/>
+              </a>
             </div>
-            <div>
-              <FormLabel>Comment:</FormLabel>
-              <CommentInput name="comment" />
+            <div className="col-4">
+            <a target="_blank" href="https://github.com/ardiaaan/">
+              <img className="logos" src={require('../images/github.png')}/>
+            </a>
             </div>
-            <button type="submit">Submit</button>
-          </form>
-        </FormDiv>
-
-        <EmailMe>Or, just email me directly at <a href="dianamainachui@gmail.com" target="_blank"><strong>dianamainachui@gmail.com</strong></a>.</EmailMe>
-
-        {/* <hr/> */}
-        {/* <CenteredHeader><PortButton href="https://drive.google.com/file/d/0B-Wn-csD32OpVmUyVXFVa0JJakE/view" target="_blank">Download My Resume</PortButton></CenteredHeader> */}
+            </div>
+          </div>
       </div>
     );
   }
 }
 
-export default Contact;
+export default Contact
