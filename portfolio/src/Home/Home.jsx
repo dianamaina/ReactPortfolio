@@ -18,7 +18,7 @@ class Home extends Component {
               My study field is Business Information Technology. My study orientation is in the Digital Service Field</p>
             <h3>Here is a description of my knowledge after graduation</h3>
               <ul>
-                <li>Professional of digital services</li>
+                <li>Professional Business skills </li>
                 <li>Ability to understand the needs of both business and end users</li>
                 <li>Understanding the customer´s value production prospects in the whole</li>
                 <li>Modeling the needs in such a format that they can be communicated with professionals</li>
