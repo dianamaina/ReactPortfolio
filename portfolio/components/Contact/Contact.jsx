@@ -15,7 +15,7 @@ const Contact = () => {
               </div>
               <div className="col-sm-2">
                 {/* Link to Email */}
-                <a className="navbar-brand" href="mailto: zachdrummond3@gmail.com">
+                <a className="navbar-brand" href="mailto: dianamainachui@gmail.com">
                   <svg
                     width="1.5em"
                     height="1.5em"
