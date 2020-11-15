@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Navbar from 'react-bootstrap/Navbar';
 
 import Footer from './components/footer';
+import HomePage from './pages/HomePage';
 
 
 import './App.css';
@@ -51,6 +52,8 @@ class App extends React.component {
               <link className="nav-link" to="/">Home</link>
               <link className="nav-link" to="/">About</link>
               <link className="nav-link" to="/">Contact</link>
+
+              <Route path="/" exact render={() => <HomePage title={this.state.home.title} />} />
 
             </Nav>
             
