@@ -1,19 +1,61 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import container from 'react-bootstrap/container';
+import Navbar from 'react-bootstrap/Navbar';
+import Navbar from 'react-bootstrap/Navbar';
+
+
 import './App.css';
 
-import Home from './Home/Home.jsx';
-import About from './About/About.jsx';
-import Contact from './Contact/Contact.jsx';
-class App extends Component {
+class App extends React.component {
+
+  constructor(prop) {
+    super (props);
+    this.state = {
+      title: 'Diana Maina',
+      headerLinks: [
+        { title: 'Home', path: '/'},
+        { title: 'About', path: 'about'},
+        { titlae: 'Contact', path: '/contact'}
+      ],
+      home: {
+        title: 'Be brave',
+        subTitle: 'Fun projects',
+        text: 'Check out my projects below'
+      },
+      about: {
+        title: 'About Me'
+      },
+      contact: {
+        title: 'Let\'s Talk'
+      }
+    }
+  }
+}
+
+
   render() {
     return (
       <Router>
-        <div>
-          <Route exact path="/" component={Home}/>
-          <Route path="/About" component={About}/>
-          <Route path="/contact" component={Contact}/>
-        </div>
+        <container className="p-0" fluid={true}>
+
+          <Navbar className="border-bottom" bg="transparent" expands="lg">
+            <Navbar.Brand>Diana Maina</Navbar.Brand>
+
+            <Navbar.Toggle aria-controls="navbar-toggle" />
+            <Navbar.Collapse id="navbar-toggle" />
+
+            <Nav className="ml-auto">
+              <link className="nav-link" to="/">Home</link>
+              <link className="nav-link" to="/">About</link>
+              <link className="nav-link" to="/">Contact</link>
+
+            </Nav>
+
+            
+          </Navbar>
+
+        </container>
       </Router>
     );
   }
