@@ -4,6 +4,8 @@ import container from 'react-bootstrap/container';
 import Navbar from 'react-bootstrap/Navbar';
 import Navbar from 'react-bootstrap/Navbar';
 
+import Footer from './components/footer';
+
 
 import './App.css';
 
@@ -37,7 +39,7 @@ class App extends React.component {
   render() {
     return (
       <Router>
-        <container className="p-0" fluid={true}>
+        <Container className="p-0" fluid={true}>
 
           <Navbar className="border-bottom" bg="transparent" expands="lg">
             <Navbar.Brand>Diana Maina</Navbar.Brand>
@@ -51,11 +53,12 @@ class App extends React.component {
               <link className="nav-link" to="/">Contact</link>
 
             </Nav>
-
             
           </Navbar>
 
-        </container>
+          <Footer />
+
+        </Container>
       </Router>
     );
   }
