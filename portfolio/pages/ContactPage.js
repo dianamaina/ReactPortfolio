@@ -1,6 +1,6 @@
 import Reacct from 'react';
 
-function HomePage (props) {
+function Contact (props) {
 
     return(
         
@@ -9,4 +9,4 @@ function HomePage (props) {
     );
 }
 
-export default HomePage;
+export default Contact;
