@@ -32,7 +32,6 @@ const Portfolio = () => {
             <GitHub href="https://github.com/dianamaina/gifted" />
           </Card>
 
-         
         </div>
       </div>
     </main>
